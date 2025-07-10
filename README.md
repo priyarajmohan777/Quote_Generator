@@ -1,5 +1,5 @@
 # Quote_Generator
-## Date:
+## Date: 10-07-2025
 ## Objective:
 To create a simple quote generator using HTML, CSS, and JavaScript that displays a new random motivational quote each time a button is clicked — similar to daily quote sections on blogs or productivity apps.
 
@@ -36,9 +36,69 @@ Ensure each click updates the quote dynamically using innerText.
 Animate the quote change using fade effects.
 
 Add a “Tweet this” button with a share link.
+
 ## HTML Code:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Quotes Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Quotes Generator</h1>
+    <p id="quote">Click the button to see a quote</p>
+    <p id="author">-</p>
+    
+    <button onclick="showQuote()">Get Quote</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
 ## CSS Code:
+```
+body
+{
+  background-color: rgb(178, 223, 174);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display:flex;
+   justify-content: center;
+   align-items:center ;
+   height: 90vh;
+}
+
+.container
+{
+  background-color: antiquewhite;
+  display: inline-block;
+  border:2px solid black;
+  border-radius: 10px;
+  padding:30px;
+  width: 300px;
+  text-align: center;
+  word-wrap: break-word;
+
+}
+
+button
+{
+  border:2px solid black;
+  border-radius:8px;
+  background-color:rgb(162, 149, 185);
+  padding:15px;
+  justify-content: center;
+  display: block;
+  margin: 20px auto 0;
+}
+
+```
 ## Output:
+<img width="1915" height="1007" alt="image" src="https://github.com/user-attachments/assets/13488643-e937-4190-91f0-535cc4bd0e48" />
 
 ## Result:
 A simple quote generator using HTML, CSS, and JavaScript that displays a new random motivational quote each time a button is clicked — similar to daily quote sections on blogs or productivity apps is created successfully.
